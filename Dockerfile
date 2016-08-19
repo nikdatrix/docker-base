@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM ubuntu:16.04
 
 MAINTAINER Felipe Restrepo, felipe.restrepo@allegorithmic.com
 
