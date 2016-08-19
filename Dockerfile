@@ -11,7 +11,7 @@ ENV LANG C.UTF-8
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update
 RUN apt-get install --no-install-recommends -y -qq \
-	vim-tiny mc
+	vim-tiny mc software-properties-common
 
 RUN apt-get clean && \
 	rm -rf /tmp/* /var/tmp/* && \
