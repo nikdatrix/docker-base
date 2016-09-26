@@ -13,6 +13,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update
 RUN apt-get install --no-install-recommends -y -qq \
 	vim-tiny mc software-properties-common
 
+# Debian and Ubuntu do apt-get clen automatically.
 RUN apt-get clean && \
 	rm -rf /tmp/* /var/tmp/* && \
 	rm -rf /var/lib/apt/lists/* && \
